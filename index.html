@@ -1,129 +1,120 @@
-<!DOCTYPE html>
+
+      <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bye Bye Junk</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #ff69b4;
-      color: #fff;
-    }
-
-    header {
-      text-align: center;
-      padding: 40px 20px 10px;
-    }
-
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-      color: #fff;
-    }
-
-    header p {
-      font-size: 1.3em;
-      margin: 10px 0;
-      font-weight: 500;
-    }
-
-    .hero {
-      background: url('images/placeholder.jpg') center/cover no-repeat;
-      padding: 100px 20px;
-      text-align: center;
-      color: white;
-      background-color: rgba(0,0,0,0.4);
-      background-blend-mode: overlay;
-    }
-
-    .hero h2 {
-      font-size: 2.5em;
-      margin: 0;
-      font-weight: bold;
-    }
-
-    .hero p {
-      font-size: 1.2em;
-      margin-top: 10px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .get-quote-button {
-      display: inline-block;
-      margin-top: 25px;
-      background-color: #ffa500;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1em;
-    }
-
-    .info {
-      padding: 50px 20px;
-      background-color: #fff;
-      color: #333;
-      text-align: center;
-    }
-
-    .info h3 {
-      font-size: 1.8em;
-      color: #ff69b4;
-    }
-
-    .info p {
-      max-width: 600px;
-      margin: 10px auto;
-      font-size: 1.1em;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 30px 20px;
-    }
-
-    footer img {
-      width: 150px;
-      margin-top: 15px;
-    }
-
-    .tag {
-      font-style: italic;
-      font-size: 1em;
-      margin-top: 8px;
-      color: #ffa500;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Navigation Bar -->
+  <nav class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold text-pink-600">Bye Bye Junk</a>
+      <div class="space-x-4">
+        <a href="#about" class="text-gray-700 hover:text-pink-600">About</a>
+        <a href="#gallery" class="text-gray-700 hover:text-pink-600">Gallery</a>
+        <a href="#reviews" class="text-gray-700 hover:text-pink-600">Reviews</a>
+        <a href="#contact" class="text-gray-700 hover:text-pink-600">Contact</a>
+        <a href="/quote.html" class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded">Get a Quote</a>
+      </div>
+    </div>
+  </nav>
 
-  <header>
-    <h1>BYE BYE JUNK</h1>
-    <p>Got Junk? We Got You.</p>
-  </header>
+  <!-- Spacer for Fixed Nav -->
+  <div class="h-20"></div>
 
-  <section class="hero">
-    <h2>Welcome to Bye Bye Junk</h2>
-    <p>Declutter with ease. We haul the mess, so you don’t stress.</p>
-    <a href="quote.html" class="get-quote-button"> Get a Free Quote</a>
+  <!-- Hero Section -->
+  <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581090700227-1e8a0fdd2b5f?auto=format&fit=crop&w=1650&q=80');">
+    <div class="absolute inset-0 bg-pink-900 bg-opacity-40 flex flex-col justify-center items-center text-center px-4">
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Got Junk? We Got You.</h1>
+      <p class="text-white text-lg mb-4 max-w-xl">We haul furniture, appliances, yard debris, garage cleanouts, move outs — big or small, we do it all.</p>
+      <a href="/quote.html" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-xl text-lg">Get a Free Quote</a>
+    </div>
   </section>
 
-  <section class="info">
-    <h3>What We Haul</h3>
-    <p>Junk Removal, Garage Cleanouts, Yard Debris, Furniture & Appliances, Construction Waste, and more.</p>
-    <p class="tag">Proudly Women-Owned</p>
+  <!-- About Section -->
+  <section id="about" class="py-12 bg-white text-center">
+    <h2 class="text-3xl font-bold mb-4 text-pink-600">Welcome to Bye Bye Junk</h2>
+    <p class="max-w-3xl mx-auto text-lg">We’re a local, woman-owned junk removal team based in San Antonio. We specialize in making clutter disappear — from single items to full cleanouts. Fast, friendly, and always fair. Let us help you reclaim your space with a smile!</p>
   </section>
-<footer style="text-align: center; padding: 20px; background-color: #333; color: white;">
-  <p>© 2025 Bye Bye Junk. All Rights Reserved.</p>
-  <img src="images/7C6B9A8E-1A33-42F0-92EA-FC8ACD71751D.PNG" alt="Bye Bye Junk Logo" style="max-width: 200px; margin-top: 10px;" />
-</footer>
 
+  <!-- Services Overview -->
+  <section class="py-12 bg-rose-50 text-center">
+    <h2 class="text-3xl font-bold mb-4 text-pink-600">What We Haul</h2>
+    Need it gone? We’ve got you covered — from single-item pickups to full garage cleanouts, move outs, and even professional cleanups for offices, hotels, and commercial spaces.
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div class="bg-white p-4 shadow rounded-xl flex flex-col items-center">
+        <div class="text-4xl mb-2">🛋️</div>
+        <span>Old Furniture</span>
+      </div>
+      <div class="bg-white p-4 shadow rounded-xl flex flex-col items-center">
+        <div class="text-4xl mb-2">🛏️</div>
+        <span>Mattresses & Box Springs</span>
+      </div>
+      <div class="bg-white p-4 shadow rounded-xl flex flex-col items-center">
+        <div class="text-4xl mb-2">🌿</div>
+        <span>Yard Waste & Debris</span>
+      </div>
+      <div class="bg-white p-4 shadow rounded-xl flex flex-col items-center">
+        <div class="text-4xl mb-2">🏚️</div>
+        <span>Garage & Storage Cleanouts</span>
+      </div>
+      <div class="bg-white p-4 shadow rounded-xl flex flex-col items-center">
+        <div class="text-4xl mb-2">📦</div>
+        <span>Move Out Junk</span>
+      </div>
+      <div class="bg-white p-4 shadow rounded-xl flex flex-col items-center">
+        <div class="text-4xl mb-2">🧹</div>
+        <span>Random Household Clutter</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-12 text-center bg-rose-100">
+    <h2 class="text-3xl font-bold text-pink-600 mb-4">Why Choose Bye Bye Junk?</h2>
+    <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+      <div class="bg-white p-6 rounded-xl shadow">
+        💨 Same-Day & Next-Day Availability
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        💰 Transparent Pricing, No Hidden Fees
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        🤝 Friendly & Respectful Team
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        💪 We Handle All the Heavy Lifting
+      </div>
+    </div>
+  </section>
+
+  <section class="py-6 bg-rose-50 text-center">
+    <h3 class="text-2xl font-bold text-pink-600 mb-2">Accepted Payment Methods</h3>
+    <p class="text-lg">💳 Cash • Zelle • Cash App</p>
+  </section>
+
+
+  <a
+    href="https://wa.me/12109126843"
+    class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50"
+    target="_blank"
+    aria-label="Chat on WhatsApp"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12l-4-4m0 0l-4 4m4-4v12" />
+    </svg>
+  </a>
+
+  <!-- Footer with Logo -->
+  <footer class="py-8 bg-white text-center">
+    <img src="/mnt/data/773F1EBE-47D6-4CE4-AF02-D41C8023ADAA.PNG" alt="Bye Bye Junk Logo" class="mx-auto w-32 mb-2" />
+    <p class="text-sm text-gray-500">Proudly woman-owned and operated 💪<br>📧 Email: <a href="mailto:byebyejunk.sa@gmail.com" class="text-pink-600 hover:underline">byebyejunk.sa@gmail.com</a><br>&copy; 2025 Bye Bye Junk. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+  <img src="images/7C6B9A8E-1A33-42F0-92EA-FC8ACD71751D.PNG" alt="Bye Bye Junk Logo" style="max-width: 200px; margin-top: 10px;" />
+
